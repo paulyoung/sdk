@@ -118,6 +118,7 @@ pub struct HttpResponse {
     pub headers: Vec<HeaderField>,
     pub body: RcBytes,
     pub streaming_strategy: Option<StreamingStrategy>,
+    pub upgrade: Option<bool>,
 }
 
 #[derive(Clone, Debug, CandidType, Deserialize)]
