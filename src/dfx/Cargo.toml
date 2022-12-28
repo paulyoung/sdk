@@ -9,6 +9,9 @@ build = "assets/build.rs"
 name = "dfx"
 path = "src/main.rs"
 
+[lib]
+path = "src/main.rs"
+
 [build-dependencies]
 bytes = "1"
 flate2 = { version = "1.0.11", default-features = false, features = ["zlib-ng"] }
